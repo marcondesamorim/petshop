@@ -2,6 +2,7 @@ json-server --watch db.json
 
 npx json-server --watch db.json
 
+browser-sync start --server --file . --host --port 5000 startPath telas/lista-clientes.html
 
 
 choco install firacode
