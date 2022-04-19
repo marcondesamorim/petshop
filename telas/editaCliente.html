@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doguito Petshop | Cadastro de cliente</title>
+    <title>Doguito Petshop | Atualizar cliente</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/base/base.css" />
@@ -23,7 +23,7 @@
                 <li class="cabecalho__link"><a href="#">Dashboard</a></li>
                 <li class="cabecalho__link"><a href="#">Produtos</a></li>
                 <li class="cabecalho__link">
-                    <a href="lista_cliente.html">Clientes </a>
+                    <a href="listaCliente.html">Clientes </a>
                 </li>
                 <li class="cabecalho__link"><a href="#">Pets</a></li>
             </ul>
@@ -31,12 +31,12 @@
     </header>
     <main class="container flex flex--centro flex--coluna">
         <section class="cartao cadastro">
-            <h1 class="cartao__titulo">Novo Cliente</h1>
-            <form class="flex flex--coluna" data-form>
+            <h1 class="cartao__titulo">Edição</h1>
+            <form action="#" class="flex flex--coluna" data-form>
                 <div class="input-container">
                     <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required data-nome />
                     <label class="input-label" for="nome">Nome</label>
-                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span
             >
           </div>
           <div class="input-container">
@@ -51,16 +51,17 @@
             />
             <label class="input-label" for="email">email</label>
             <span class="input-mensagem-erro"
-              >Esse campo não pode estar vazio</span
+              >Esse campo não pode ficar vazio</span
             >
           </div>
-          <button type="submit" class="botao">Cadastrar</button>
+          <button type="submit" class="botao">Editar cliente</button>
         </form>
       </section>
     </main>
-    <script
-      type="module"
-      src="../controller/cadastra-clientes-controller.js"
-    ></script>
   </body>
+
+  <script
+    type="module"
+    src="../controller/atualizaClienteController.js"
+  ></script>
 </html>
